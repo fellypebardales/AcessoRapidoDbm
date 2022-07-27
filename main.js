@@ -1,6 +1,5 @@
-
-var nome = window.prompt("Digite aqui seu nome:")
-document.getElementById('saudacoes').style.fontSize = '1rem'
+var nome = window.prompt("Digite seu primeiro nome:")
+document.getElementById('saudacoes').style.fontSize = '1.3rem'
 document.getElementById('saudacoes').style.color = "white"
 saudacoes.innerHTML = 'Boas vindas,<br>' + nome +'!'
 
@@ -16,5 +15,4 @@ const interval = setInterval(() => {
     var div = document.getElementById('hora'); 
     div.style.color = 'white'
     div.style.fontSize = '1.3rem' 
-    div.style.borderRadius = '1em'
 }, 1000); 
