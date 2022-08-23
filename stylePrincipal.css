@@ -1,6 +1,6 @@
 .bg {
     animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #d3d3d3 50%, #035951 50%);
+    background-image: linear-gradient(-90deg, #d3d3d3 50%, #035951 50%);
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -8,14 +8,14 @@
     right:-50%;
     top:0;
     z-index:-1;
-    animation-duration:9s;
+    animation-duration:13s;
 } 
 .bg2 {
     animation-direction:alternate-reverse;
-    animation-duration:7s;
+    animation-duration:11s;
 } 
 .bg3 {
-    animation-duration:10s;
+    animation-duration:14s;
 }
 @keyframes slide {
     0% {
@@ -92,20 +92,27 @@ p {
 button {
     width: 100%;
     font-size: auto;
-    background: #20635e;
+    background-color: #20635e;
     border: 0.1rem solid #ffffff;
-    border-radius: 0.7rem;
     padding: 0.85em 0.75em;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    color: #20635e;
 }
 button:hover {
-    color: #000000;
+    color: #20635e;
+    background-color: transparent;
+    border: 0.1rem solid #20635e;
 }
 a{
     text-decoration: none;
     color: white;
+    font-weight: 600;
+}
+a:hover {
+    text-decoration: none;
+    color: #20635e;
     font-weight: 600;
 }
 button::after {
@@ -118,14 +125,14 @@ button::after {
     display: block;
 }
 button[class^="slide"]::after {
-    transition: all 0.35s;
+    transition: all 0.30s;
 }
 button[class^="slide"]:hover::after {
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    transition: all 0.35s;
+    transition: all 0.30s;
 }
 button.slide_from_right::after {
     top: 0;
