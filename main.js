@@ -1,9 +1,3 @@
-var nome = window.prompt("Digite seu primeiro nome:")
-document.getElementById('saudacoes').style.fontSize = '1.3rem'
-document.getElementById('saudacoes').style.color = "white"
-saudacoes.innerHTML = 'Boas vindas,<br>' + nome +'!'
-
-
 const zeroFill = n => { return ('0' + n).slice(-2); } // Cria intervalo 
 const interval = setInterval(() => { 
     // Pega o horário atual 
