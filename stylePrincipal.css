@@ -9,11 +9,11 @@
     top:0;
     z-index:-1;
     animation-duration:13s;
-} 
+}
 .bg2 {
     animation-direction:alternate-reverse;
     animation-duration:11s;
-} 
+}
 .bg3 {
     animation-duration:14s;
 }
@@ -26,10 +26,22 @@
     }
 }
 
+body::-webkit-scrollbar {
+    width: 15px;               /* width of the entire scrollbar */
+  }
+
+  body::-webkit-scrollbar-track {
+    background-color: #035951;        /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #fff;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #035951;  /* creates padding around scroll thumb */
+  }
+
 .topo {
     background-color: #035951;
-    display: flex;
-    align-items: center;
     text-align: center;
     padding: 1rem 2rem;
 }
@@ -37,6 +49,7 @@
 .titulo {
     color: white;
     font-size: 1.8rem;
+    line-height: 110%;
     text-align: center;
     flex: 1;
 }
@@ -46,13 +59,12 @@
 }
 
 .body {
-    background-image: url(../dbm.png);
-    background-repeat: no-repeat;
-    background-position-y: 3rem;
+    font-family: 'Cairo', sans-serif !important;
+    background: url(../img/dbm.png);
+    background-position: center;
     background-size: 100%;
     margin:0;
     font-size: 0.90rem;
-    font-family: arial;
     font-weight: 800;
     display: flex;
     flex-direction: column;
@@ -62,14 +74,14 @@
 .container {
     display: flex;
     justify-content: center;
-    padding: 3rem 3em;
+    padding: 0 0 2em 0;
 }
 
 .ul {
     justify-content: center;
-    padding: 0 1em;
+    padding: 0 2em;
 }
-    
+
 p {
     font-size: 1rem;
     font-weight: 700;
@@ -81,14 +93,14 @@ p {
 }
 
 .lista_ {
-    padding: 1em 3rem;        
+    padding: 0 2rem;
 }
 
 .item_lista_sistemas, .item_lista_treinamento {
     display: block;
     padding-bottom: 1rem;
 }
-    
+
 button {
     width: 100%;
     font-size: auto;
@@ -98,13 +110,20 @@ button {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    color: #20635e;
+    color: #fff;
+    cursor: pointer;
+    transition: .6s;
+    font-weight: 700;
 }
+
 button:hover {
     color: #20635e;
     background-color: transparent;
     border: 0.1rem solid #20635e;
+    transform: scale(1.07);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
 a{
     text-decoration: none;
     color: white;
@@ -149,4 +168,12 @@ footer {
     font-style: italic;
     opacity: 0.2;
 
+}
+
+@media screen and (max-width: 690px) {
+    .container {
+        display: block;
+        justify-content: center;
+        padding: 0 0 2em 0;
+    }
 }
